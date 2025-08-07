@@ -1,17 +1,10 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 18
-    commands:
-      - echo Installing dependencies...
-      - npm install
   build:
     commands:
-      - echo Build started on \date"
-      - npm run build
+      - echo Build started on date
+      - echo "Packaging the Python application source..."
 artifacts:
   files:
-    - '/*'
-  base-directory: 'build'
+    - '/*'
